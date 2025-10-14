@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: black;
+        color: rgb(182, 0, 0);
+    }
+    .contenedor{
+        background-color: rgb(142, 164, 143);
+        color: rgb(252, 237, 237);
+        flex-direction: column;
+    }
+    footer{
+        bottom: 0px;
+        position:absolute;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        color: rgb(182, 0, 0);
+        margin: 0px;
+        height: 50px;
+    }
+    footer h2{
+        padding-top: 10px;
+    }
+    .hamburger-icon {
+    display: block; /* Muestra el botón */
+    position: fixed; /* Lo mantiene visible aunque se haga scroll */
+    top: 15px;
+    right: 15px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    }
+    .menu-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px; /* Ancho del menú al desplegarse */
+        height: 100%;
+        background-color: #333;
+        z-index: 999;
+        transform: translateX(100%); /* Lo mueve 100% de su ancho a la derecha */
+        transition: transform 0.3s ease-in-out; /* Agrega una animación suave */
+    }
+    .menu-nav.active {
+        transform: translateX(0); /* Lo devuelve a su posición original (visible) */
+    }
+    .menu-nav ul {
+        list-style: none;
+        padding: 70px 0 0 0; /* Espacio superior para el encabezado/ícono */
+        margin: 0;
+    }
+    .menu-nav li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid #555;
+    }
+    .menu-nav li a:hover {
+        background-color: #555;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Prevención de Adicciones</h1>
+            <h2>"Si te Drogas te Dañas"</h2>
+            <div class="burger">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="fentanilo.html">Fentanilo</a></li>
+                    <li><a href="metanfetamina.html">Metanfetamina</a></li>
+                    <li><a href="vapeadores.html">vapeadores</a></li>
+                    <li><a href="cannabis.html">Cannabis (Marihuana)</a></li>
+                    <li><a href="tabaco.html">Tabaco</a></li>
+                    <li><a href="alcohol.html">Alcohol</a></li>
+                    <li><a href="benzodiacepinas.html">Benzodiacepinas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor">
+        <h2>Las drogas y su clasificación</h2>
+        <p>Hola prueba</p>
+        <img src="Captura de pantalla 2025-10-14 105506.png" alt="Adicciones">
+    </div>
+    <footer>
+        <h2>García Vázquez Rafael Eliseo 5ºJ</h2>
+    </footer>
+</body>
+
+</html>
