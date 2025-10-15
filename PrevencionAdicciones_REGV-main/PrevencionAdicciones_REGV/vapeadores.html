@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prevención de Adicciones</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        top: 0;
+        position:fixed;
+        background-color: rgb(246, 242, 235);
+        color: rgb(105, 26, 49);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 120px;
+    }
+
+    /* Contenedor general */
+    .contenedor {
+        display: flex;
+        background-color: rgb(142, 164, 143);
+        color: rgb(252, 237, 237);
+        margin-top: 120px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .texto {
+        width: 55%;
+        line-height: 1.5;
+    }
+
+    .imagenes {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .imagenes img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    footer {
+        position:absolute;
+        bottom: 0;
+        background-color: rgb(246, 242, 235);
+        width: 100%;
+        text-align: center;
+        color: rgb(105, 26, 49);
+        height: 100px;
+        position: relative;
+    }
+
+    footer h2 {
+        padding-top: 35px;
+    }
+
+    /* Botón del menú hamburguesa */
+    .hamburger-icon {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: rgb(105, 26, 49);
+    }
+
+    /* Menú lateral */
+    .menu-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-nav.active {
+        transform: translateX(0);
+    }
+
+    .menu-nav ul {
+        list-style: none;
+        padding: 70px 0 0 0;
+        margin: 0;
+    }
+
+    .menu-nav li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid #555;
+    }
+
+    .menu-nav li a:hover {
+        background-color: #555;
+    }
+    .menu-nav li a.active{
+        background-color: rgb(142, 164, 143);
+    }
+    .subtitulo{
+        font-weight: bold;
+        font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prevención de Adicciones</h1>
+    <h2>"Si te Drogas te Dañas"</h2>
+  </header>
+
+  <!--Botón del menú hamburguesa -->
+  <button class="hamburger-icon" id="burguer">☰</button>
+
+  <!--Menú lateral -->
+  <nav class="menu-nav" id="navbar">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fentanilo.html">Fentanilo</a></li>
+        <li><a href="metanfetamina.html">Metanfetamina</a></li>
+        <li><a href="vapeadores.html" class="active">Vapeadores</a></li>
+        <li><a href="cannabis.html">Cannabis (Marihuana)</a></li>
+        <li><a href="tabaco.html">Tabaco</a></li>
+        <li><a href="alcohol.html">Alcohol</a></li>
+        <li><a href="benzodiacepinas.html">Benzodiacepinas</a></li>
+    </ul>
+  </nav>
+
+  <!--Contenido principal -->
+  <div class="contenedor">
+    <div class="texto">
+        <h2>Vapeadores</h2>
+        <p class="subtitulo">¿Qué son?</p>
+        <p>Los vapeadores (cigarrillos elec
+            trónicos o e-cigs) son dispositi
+            vos electrónicos que administran
+            
+            nicotina, sustancia psicoactiva
+            
+            estimulante y con un alto poten
+            cial adictivo. Estos dispositivos
+            
+            incluyen un cartucho desechable
+            o recargable que es calentado
+            para permitir la inhalación de un
+            líquido compuesto por nicotina,
+            
+            formaldehído, propilenglicol, sa
+            borizantes y aromatizantes.</p>
+        <p class="subtitulo">E</p>
+    </div>
+
+    <div class="imagenes">
+        <img src="pngtree-smoke-vape-cigarette-vector-ilustration-png-image_7422814.png" alt="vapeador">
+    </div>
+  </div>
+
+  <footer>
+    <h2>García Vázquez Rafael Eliseo 5ºJ</h2>
+  </footer>
+
+  <script>
+    // JavaScript que controla el menú
+    const menuBtn = document.getElementById('burguer');
+    const menu = document.getElementById('navbar');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

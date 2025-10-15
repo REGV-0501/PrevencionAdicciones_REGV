@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prevención de Adicciones</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        top: 0;
+        position:fixed;
+        background-color: rgb(246, 242, 235);
+        color: rgb(105, 26, 49);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 120px;
+    }
+
+    /* Contenedor general */
+    .contenedor {
+        display: flex;
+        background-color: rgb(142, 164, 143);
+        color: rgb(252, 237, 237);
+        margin-top: 120px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .texto {
+        width: 55%;
+        line-height: 1.5;
+    }
+
+    .imagenes {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .imagenes img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    footer {
+        position:absolute;
+        bottom: 0;
+         background-color: rgb(246, 242, 235);
+        width: 100%;
+        text-align: center;
+        color: rgb(105, 26, 49);
+        height: 100px;
+        position: relative;
+    }
+
+    footer h2 {
+        padding-top: 35px;
+    }
+
+    /* Botón del menú hamburguesa */
+    .hamburger-icon {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: rgb(105, 26, 49);
+    }
+
+    /* Menú lateral */
+    .menu-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-nav.active {
+        transform: translateX(0);
+    }
+
+    .menu-nav ul {
+        list-style: none;
+        padding: 70px 0 0 0;
+        margin: 0;
+    }
+
+    .menu-nav li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid #555;
+    }
+
+    .menu-nav li a:hover {
+        background-color: #555;
+    }
+    .menu-nav li a.active{
+        background-color: rgb(142, 164, 143);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prevención de Adicciones</h1>
+    <h2>"Si te Drogas te Dañas"</h2>
+  </header>
+
+  <!--Botón del menú hamburguesa -->
+  <button class="hamburger-icon" id="burguer">☰</button>
+
+  <!--Menú lateral -->
+  <nav class="menu-nav" id="navbar">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fentanilo.html">Fentanilo</a></li>
+        <li><a href="metanfetamina.html">Metanfetamina</a></li>
+        <li><a href="vapeadores.html">Vapeadores</a></li>
+        <li><a href="cannabis.html" class="active">Cannabis (Marihuana)</a></li>
+        <li><a href="tabaco.html">Tabaco</a></li>
+        <li><a href="alcohol.html">Alcohol</a></li>
+        <li><a href="benzodiacepinas.html">Benzodiacepinas</a></li>
+    </ul>
+  </nav>
+
+  <!--Contenido principal -->
+  <div class="contenedor">
+    <div class="texto">
+        <h2>Las drogas y su clasificación</h2>
+        <p><b>Depresores:</b><br>
+        Suprimen, inhiben o reducen algunos aspectos de la actividad del Sistema Nervioso Central (SNC).<br>
+        • Síntomas de intoxicación: confusión, habla distorsionada, mareos, sequedad en la boca, problemas motrices y de memoria.<br>
+        • Las principales sustancias depresoras del SNC son medicamentos sedantes y opiáceos.<br>
+        • Algunos ejemplos son el alcohol, la cannabis, los analgésicos, las benzodiacepinas, los opiáceos y sus análogos sintéticos como el fentanilo.</p>
+
+        <p><b>Estimulantes:</b><br>
+        Activan o incrementan la actividad del SNC.<br>
+        • Síntomas: aumento del ritmo cardiaco, temperatura y presión arterial; sensación de energía y alerta.<br>
+        • Ejemplos: cafeína, nicotina, cocaína, metanfetamina.</p>
+
+        <p><b>Alucinógenos:</b><br>
+        Inducen alteraciones en la percepción y el pensamiento.<br>
+        • Síntomas: ilusiones visuales, euforia o cambios de ánimo, taquicardia.<br>
+        • Ejemplos: LSD, psilocibina, mescalina, peyote.</p>
+
+        <p><b>Fármacos de uso médico:</b><br>
+        Afectan directamente el SNC. Deben usarse solo bajo receta médica.<br>
+        • Ejemplos: ansiolíticos (clonazepam), antidepresivos (fluoxetina), antipsicóticos (haloperidol).</p>
+    </div>
+
+    <div class="imagenes">
+        <img src="Captura de pantalla 2025-10-14 105506.png" alt="Adicciones">
+        <img src="abuso-y-trafico-de-drogas-illustration-svg-download-png-8795823.webp" alt="Abuso de drogas">
+    </div>
+  </div>
+
+  <footer>
+    <h2>García Vázquez Rafael Eliseo 5ºJ</h2>
+  </footer>
+
+  <script>
+    // JavaScript que controla el menú
+    const menuBtn = document.getElementById('burguer');
+    const menu = document.getElementById('navbar');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prevención de Adicciones</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        top: 0;
+        position:fixed;
+        background-color: rgb(246, 242, 235);
+        color: rgb(105, 26, 49);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 120px;
+    }
+
+    /* Contenedor general */
+    .contenedor {
+        display: flex;
+        background-color: rgb(142, 164, 143);
+        color: rgb(252, 237, 237);
+        margin-top: 120px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .texto {
+        width: 55%;
+        line-height: 1.5;
+    }
+
+    .imagenes {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .imagenes img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    footer {
+        position:absolute;
+        bottom: 0;
+         background-color: rgb(246, 242, 235);
+        width: 100%;
+        text-align: center;
+        color: rgb(105, 26, 49);
+        height: 100px;
+        position: relative;
+    }
+
+    footer h2 {
+        padding-top: 35px;
+    }
+
+    /* Botón del menú hamburguesa */
+    .hamburger-icon {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: rgb(105, 26, 49);
+    }
+
+    /* Menú lateral */
+    .menu-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu-nav.active {
+        transform: translateX(0);
+    }
+
+    .menu-nav ul {
+        list-style: none;
+        padding: 70px 0 0 0;
+        margin: 0;
+    }
+
+    .menu-nav li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid #555;
+    }
+
+    .menu-nav li a:hover {
+        background-color: #555;
+    }
+    .menu-nav li a.active{
+        background-color: rgb(142, 164, 143);
+    }
+    .subtitulo{
+        font-weight: bold;
+        font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prevención de Adicciones</h1>
+    <h2>"Si te Drogas te Dañas"</h2>
+  </header>
+
+  <!--Botón del menú hamburguesa -->
+  <button class="hamburger-icon" id="burguer">☰</button>
+
+  <!--Menú lateral -->
+  <nav class="menu-nav" id="navbar">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fentanilo.html">Fentanilo</a></li>
+        <li><a href="metanfetamina.html" class="active">Metanfetamina</a></li>
+        <li><a href="vapeadores.html">Vapeadores</a></li>
+        <li><a href="cannabis.html">Cannabis (Marihuana)</a></li>
+        <li><a href="tabaco.html">Tabaco</a></li>
+        <li><a href="alcohol.html">Alcohol</a></li>
+        <li><a href="benzodiacepinas.html">Benzodiacepinas</a></li>
+    </ul>
+  </nav>
+
+  <!--Contenido principal -->
+  <div class="contenedor">
+    <div class="texto">
+        <h2>Metanfetamina</h2>
+        <p class="subtitulo">¿Qué es?</p>
+        <p>La metanfetamina es una de las
+
+            drogas estimulantes más poten
+            tes que existen actualmente. Afecta el cerebro y ocasiona modificaciones en el cuerpo y la mente.</p>
+        <p>El volumen de
+
+            residuos tóxicos generado en su
+            fabricación puede superar, entre
+            
+            cinco y treinta veces, el volumen
+            
+            del producto final, por lo que el impacto negativo al medio ambiente
+            
+            es cada vez mayor.</p>
+        <p class="subtitulo">Efectos Físicos</p>
+        <p>
+            Hay una sensación de euforia y la
+            
+            idea de tener mayor fuerza y velocidad. También, se tensan los músculos, se dilatan las pupilas y se
+            
+            acelera el ritmo cardiaco; aumenta la temperatura y la respiración
+            
+            se vuelve más agitada. Desaparece la sensación de hambre y
+            
+            cansancio. Hay síntomas físicos
+            
+            no deseados como náusea, sudoración, escalofríos y convulsiones.</p>
+            <p class="subtitulo">Efectos Psicológicos</p>
+            <p>Aumenta la sensación de confianza y valor. De igual forma, disminuye la capacidad de medir riesgos y estimula comportamientos
+                
+                impredecibles o violentos. Aparecen síntomas de hiperactividad,
+                
+                paranoia y psicosis; también aparecen episodios de ansiedad y excitación. Es común que se tengan
+                
+                alucinaciones y adormecimiento
+                en las extremidades, percibido
+                
+                como cosquilleo en la piel. El consumo de metanfetamina genera desinhibición, manifiesta en
+                
+                conductas más arriesgadas, por
+                ejemplo, en el ámbito sexual, al
+                conducir vehículos y al usar otras
+                sustancias (como el alcohol), que
+                
+                se asocia a situaciones de confrontamiento y violencia.</p>
+    </div>
+
+    <div class="imagenes">
+        <img src="Fm0Sb2lX0AESGDq (1).png" alt="Metanfetamina">
+    </div>
+  </div>
+
+  <footer>
+    <h2>García Vázquez Rafael Eliseo 5ºJ</h2>
+  </footer>
+
+  <script>
+    // JavaScript que controla el menú
+    const menuBtn = document.getElementById('burguer');
+    const menu = document.getElementById('navbar');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
